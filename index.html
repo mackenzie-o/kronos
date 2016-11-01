@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/rangeslider.js/2.2.1/rangeslider.min.js"></script>
+    <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rangeslider.js/2.2.1/rangeslider.min.css">
     <script type="application/javascript" src="main.js"></script>
 
   </head>
@@ -36,15 +38,9 @@
           <br>
           <span class="h4">Bach Playback Speed</span>
           <br>
-          <div class="input-group">
-            <span class="input-group-btn">
-              <button class="btn btn-secondary" type="button" onclick="onDec(event)"> &or; </button>
-            </span>
-            <input type="text" class="form-control" id="playback" value="100" aria-describedby="basic-addon2" onkeyup="onInput(event)">
-            <span class="input-group-btn">
-              <button class="btn btn-secondary" type="button" onclick="onInc(event)"> &and; </button>
-            </span>
-          </div>
+          <br>
+          <br>
+          <input type="range" min="50" max="100" value="100" step="1" data-orientation="horizontal">
         </div>
         <br>
         <br>
