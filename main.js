@@ -1,46 +1,5 @@
 var c = 299792.458 
 
-function onInput(event) {
-	if(event.which == 13 || event.keyCode == 13) {
-		newRate = getPlayback();
-		playback = checkBound(newRate);
-		if (playback != newRate) setPlayback(playback);
-		updateAudio(playback);
-	}
-}
-
-function onDec(e) {
-	playback = getPlayback() - 1;
-	playback = checkBound(playback);
-	setPlayback(playback);
-	updateAudio(playback);
-}
-
-function onInc(e) {
-	playback = getPlayback() + 1;
-	playback = checkBound(playback);
-	setPlayback(playback);
-	updateAudio(playback);
-}
-
-function getPlayback() {
-	return parseInt(document.getElementById("playback").value);
-}
-
-function setPlayback(playback) {
-	document.getElementById("playback").value = playback;
-}
-
-function checkBound(playback) {
-	if (playback < 50) {
-		return 50;
-	} else if (playback > 400) {
-		return 400;
-	}
-	return playback;
-}
-
-
 function updateAudio(playback) {
 	audio = document.getElementById("audio");
 	console.log("new playback rate: " + playback/100);
