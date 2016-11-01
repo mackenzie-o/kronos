@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/rangeslider.js/2.2.1/rangeslider.min.js"></script>
+    <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rangeslider.js/2.2.1/rangeslider.min.css">
     <script type="application/javascript" src="main.js"></script>
 
   </head>
@@ -23,52 +25,34 @@
         <div class="col-sm-12"> 
           <div class="jumbotron">
             <h1>Kronos</h1>
-            <p>This is an example to show the potential of an offcanvas layout pattern in Bootstrap. Try some responsive-range viewport sizes to see it in action.</p>
+            <p>prototyping site</p>
           </div>
         </div>
-        <h3>Enter the velocity for object A:</h3>
-        <div class="input-group col-sm-12 col-m-4">
-          <input type="text" class="form-control" id="velocity" placeholder="0" aria-describedby="basic-addon2">
-          <span class="input-group-addon" id="basic-addon2">km/s</span>
+        <div class="col-sm-5 col-centered">
+          <span class="h4">Cello Suite No. 1 in G Major</span>
+          <br>
+          <audio controls id="audio">
+            <source src="bach.mp3" type="audio/mpeg">
+          </audio>
+          <br>
+          <br>
+          <span class="h4">Bach Playback Speed</span>
+          <br>
+          <br>
+          <br>
+          <input type="range" min="50" max="100" value="100" step="1" data-orientation="horizontal">
         </div>
-        <br/>
-        <br/>
-        <div class="col-m-7 col-centered">
-          <div class="btn-group btn-group-justified" role="group" aria-label="...">
-            <div class="btn-group" role="group">
-              <button type="button" class="btn btn-lg btn-success" onclick="startAudio()">
-                Start
-              </button>
-            </div>
-            <div class="btn-group" role="group">
-              <button type="button" class="btn btn-lg btn-danger" onclick="stopAudio()">
-                Stop
-              </button>
-            </div>
-          </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="col-sm-5 col-md-6 col-sm-offset-1 col-centered">
+          <span class="h4">Heartbeat</span>
+          <br>
+          <audio controls loop id="audio">
+            <source src="heartbeat.mp3" type="audio/mpeg">
+          </audio>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6">
-          <h1 id="offset">1</h1><h2><small>elapsed seconds for object A is equivalent to</small></h2>
-        </div><!--/.col-xs-6.col-lg-4-->
-        <div class="col-md-6">
-          <h1>1</h1><h2><small> elapsed seconds for object B.</small></h2>
-        </div>
-        <div class="col-xs-6 col-lg-6">
-          <h1 id="sEvents">0</h1><h2><small> events for object A.</small></h2>
-        </div><!--/.col-xs-6.col-lg-4-->
-        <div class="col-xs-6 col-lg-6">
-          <h1 id="vEvents">0</h1><h2><small> events for object B.</small></h2>
-        </div><!--/.col-xs-6.col-lg-4-->
-      </div><!--/row-->
-
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <div class="row">
-        <p>Events (indicated by different sounds) occur every one second for each object. As object A's velocity increases, its sound occurs less frquently, indicating a slowing of A's clock relative to B's. <a href="https://en.wikipedia.org/wiki/Time_dilation#Time_dilation_due_to_relative_velocity">Time differences are calculated using this equation.</a></p>
       </div>
     </div>
   </body>
