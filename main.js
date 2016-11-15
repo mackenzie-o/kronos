@@ -1,4 +1,5 @@
 var c = 299792.458 
+var prevRate = 100
 
 function updateAudio(playback) {
 	audio = document.getElementById("audio");
@@ -31,7 +32,13 @@ function init() {
 }
 
 function slideEnd(position, value) {
+	if (prevRate >= 50 && value < 50) {
+		// $('input[type="range"]')
+	} else if (prevRate < 50 && value >= 50) {
+
+	}
 	updateAudio(value);
+	prevRate = value;
 }
 
 $(document).ready(init);
