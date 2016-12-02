@@ -3,6 +3,7 @@
  * Copyright 2013-2016 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
+body::-webkit-scrollbar { width: 0 !important }
 body {
   width: 100%;
   height: 100%;
@@ -49,6 +50,11 @@ a:focus {
   text-decoration: none;
   color: #1d9b6c;
 }
+.no-margin {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
 .light {
   font-weight: 400;
 }
@@ -133,10 +139,10 @@ a:focus {
   display: table;
   width: 100%;
   height: auto;
-  padding: 100px 0;
+  padding: 50px 0;
   text-align: center;
   color: white;
-  background: url(../img/topblackhole.jpg) no-repeat bottom center scroll;
+  background: url(../img/topblackhole.jpg) no-repeat center center scroll;
   background-color: black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -145,13 +151,16 @@ a:focus {
 }
 .intro .intro-body {
   display: table-cell;
-  vertical-align: middle;
 }
 .intro .intro-body .brand-heading {
   font-size: 40px;
+  padding-top: 150px;
+  margin-bottom: 15px;
 }
 .intro .intro-body .intro-text {
   font-size: 18px;
+  vertical-align: center
+
 }
 @media (min-width: 768px) {
   .intro {
@@ -229,6 +238,11 @@ a:focus {
     transform: scale(1);
   }
 }
+
+.page-content {
+  margin-right: auto;
+  margin-left: auto;
+}
 .content-section {
   padding-top: 100px;
 }
@@ -236,7 +250,7 @@ a:focus {
   width: 100%;
   padding: 50px 0;
   color: white;
-  background: url(../img/midmilkyway.jpg) no-repeat center center scroll;
+  background: url(../img/midmilkyway.jpg) no-repeat center top scroll;
   background-color: black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
