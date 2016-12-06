@@ -262,7 +262,7 @@ a:focus {
   width: 100%;
   padding: 50px 0;
   color: white;
-  background: url(../img/footer-hourglass.jpg) no-repeat right top scroll;
+  background: url(../img/footer-hourglass.jpg) no-repeat center center scroll;
   background-color: black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
