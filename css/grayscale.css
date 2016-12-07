@@ -54,6 +54,9 @@ a:focus {
   margin-left: 100px;
   margin-right: 100px;
 }
+.container {
+  width: auto;
+}
 
 .light {
   font-weight: 400;
