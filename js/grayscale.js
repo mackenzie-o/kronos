@@ -4,6 +4,9 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+ var heading = 0;
+ var locs = [`.pic`, `.def`, '.miscon', `.about`]
+
 // jQuery to collapse the navbar on scroll
 function collapseNavbar() {
     if ($(".navbar").offset().top > 50) {
@@ -33,4 +36,15 @@ $(function() {
 $('.navbar-collapse ul li a').click(function() {
     $(this).closest('.collapse').collapse('toggle');
 });
+
+function autoScroll() {
+    heading = (heading+1) % 4;
+    $(locs[heading]).click();
+}
+
+window.setInterval(autoScroll, 30000);
+
+
+
+
 
