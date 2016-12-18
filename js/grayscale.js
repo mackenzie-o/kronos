@@ -42,7 +42,7 @@ function autoScroll() {
     $(locs[heading]).click();
 }
 
-window.setInterval(autoScroll, 30000);
+//window.setInterval(autoScroll, 30000);
 
 
 
